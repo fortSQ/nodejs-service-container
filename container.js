@@ -14,7 +14,7 @@ var Container = function Container () {};
  */
 Container.prototype.get = function get (service) {
     var service = this[service];
-    return service.call(this, this);
+    return service.call(this);
 };
 
 /**
@@ -28,7 +28,7 @@ Container.prototype.share = function share (callback) {
     return function self () {
         // NFE - эмуляция синглтона через свойство текущей функции
         if (self.instance === undefined) {
-            self.instance = callback.call(this, this);
+            self.instance = callback.call(this);
         }
         return self.instance;
     };
