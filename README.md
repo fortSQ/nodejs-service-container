@@ -1,5 +1,14 @@
 # Node.js service container
 
+```node
+var container = require('container');
+var Service = require('...');
+
+container.serviceA = function () { return new Service(); }; // новый объект каждый раз
+container.serviceB = container.share(function () { return new Service(); }); // один и тот же объект при вызове
+```
+
+Запустить тесты можно из консоли:
 ```
 npm test
 ```
