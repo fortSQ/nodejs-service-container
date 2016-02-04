@@ -2,10 +2,12 @@
 
 ```node
 var container = require('container');
-var Service = require('...');
+var Service = require('модуль_сервиса');
 
 container.serviceA = function () { return new Service(); }; // новый объект каждый раз
 container.serviceB = container.share(function () { return new Service(); }); // один и тот же объект при вызове
+
+container.get('сервисN'); // доступ к сервису
 ```
 
 Запустить тесты можно из консоли:
