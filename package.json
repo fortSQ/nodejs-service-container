@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-service-container",
+  "version": "0.0.1",
+  "description": "Simple object container for Node.js",
+  "main": "container.js",
+  "scripts": {
+    "test": "node test/test"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "node.js"
+  ],
+  "author": "Dmitry V. Romanov",
+  "license": "MIT"
+}

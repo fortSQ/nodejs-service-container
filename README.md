@@ -1,2 +1,5 @@
-# nodejs-service-container
-Контейнер сервисов для Node.js
+# Node.js service container
+
+```
+npm test
+```
