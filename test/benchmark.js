@@ -38,7 +38,7 @@ function runBenchmark(text, callback) {
     }
     var finalMegabyte = getMemoryMegabyteUse();
     var runTime = process.hrtime(time); // сразу вычисляет разницу времени, возвращает массив [секунды, наносекунды]
-    console.log(text + ': %d MB - %d.%d s', (finalMegabyte - initialMegabyte), runTime[0], (runTime[1] / 1000000).toFixed());
+    console.log(text + ': %d MB - %s s', (finalMegabyte - initialMegabyte), ((runTime[0] * 1e9 + runTime[1]) / 1e9).toFixed(3));
 }
 
 /**
