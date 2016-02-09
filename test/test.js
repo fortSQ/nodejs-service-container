@@ -1,6 +1,8 @@
+// > npm t
+
 const assert = require('assert');
 
-var container = require('../container');
+var container = require('..');
 var Service = require('./service');
 
 container.serviceA = function () { return new Service(); };

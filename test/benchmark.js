@@ -2,7 +2,7 @@
 
 'use strict';
 
-var container = require('../container');
+var container = require('..');
 var Service = require('./service');
 
 const COUNT = 1000000; // алых роз
